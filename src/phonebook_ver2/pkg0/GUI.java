@@ -73,11 +73,19 @@ public class GUI extends javax.swing.JFrame {
 
         jLabel2.setText("Surname");
 
+        surnameTxtFld.setNextFocusableComponent(mobileTxtFld);
+
         jLabel3.setText("Mobile");
+
+        mobileTxtFld.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        mobileTxtFld.setNextFocusableComponent(emailTxtFld);
 
         jLabel4.setText("Email");
 
+        emailTxtFld.setNextFocusableComponent(addBtn);
+
         addBtn.setText("Add");
+        addBtn.setNextFocusableComponent(updateBtn);
         addBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addBtnActionPerformed(evt);
@@ -92,6 +100,7 @@ public class GUI extends javax.swing.JFrame {
         });
 
         updateBtn.setText("Update");
+        updateBtn.setNextFocusableComponent(deleteBtn);
         updateBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 updateBtnActionPerformed(evt);
@@ -99,6 +108,7 @@ public class GUI extends javax.swing.JFrame {
         });
 
         deleteBtn.setText("Delete");
+        deleteBtn.setNextFocusableComponent(exitBtn);
         deleteBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 deleteBtnActionPerformed(evt);

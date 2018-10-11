@@ -127,6 +127,11 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="surnameTxtFld">
+      <Properties>
+        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+          <ComponentRef name="mobileTxtFld"/>
+        </Property>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
@@ -134,6 +139,14 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="mobileTxtFld">
+      <Properties>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Text Cursor"/>
+        </Property>
+        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+          <ComponentRef name="emailTxtFld"/>
+        </Property>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
@@ -141,10 +154,18 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="emailTxtFld">
+      <Properties>
+        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+          <ComponentRef name="addBtn"/>
+        </Property>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="addBtn">
       <Properties>
         <Property name="text" type="java.lang.String" value="Add"/>
+        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+          <ComponentRef name="updateBtn"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addBtnActionPerformed"/>
@@ -161,6 +182,9 @@
     <Component class="javax.swing.JButton" name="updateBtn">
       <Properties>
         <Property name="text" type="java.lang.String" value="Update"/>
+        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+          <ComponentRef name="deleteBtn"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="updateBtnActionPerformed"/>
@@ -169,6 +193,9 @@
     <Component class="javax.swing.JButton" name="deleteBtn">
       <Properties>
         <Property name="text" type="java.lang.String" value="Delete"/>
+        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+          <ComponentRef name="exitBtn"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deleteBtnActionPerformed"/>
