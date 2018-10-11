@@ -9,7 +9,7 @@ public class GUI extends javax.swing.JFrame {
     
     
     public GUI() {
-        super("PhoneBook ver 2.0 by Vije");
+        super("PhoneBook ver 2.0");
         initComponents();
         readFile();
         
